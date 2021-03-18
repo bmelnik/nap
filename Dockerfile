@@ -9,6 +9,6 @@ RUN yum install nmap -y
 EXPOSE 50055
 
 COPY nginx.conf /etc/nginx/nginx.conf
-COPY custom_grpc_policy.json /etc/nginx/custom_grpc_policy.json
+COPY custom_grpc_policy.json /etc/nginx/custom_policy.json
 COPY custom_log_format.json /etc/nginx/custom_log_format.json
-COPY hello.proto /etc/app_protect/conf/hello.proto
+#COPY hello.proto /etc/app_protect/conf/hello.proto

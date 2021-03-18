@@ -1,0 +1,17 @@
+{
+  "name": "complex-grpc",
+  "template": {
+      "name": "POLICY_TEMPLATE_NGINX_BASE"
+  },
+  "blocking-settings": {
+      "violations": [
+          {
+              "name": "VIOL_URL",
+              "block": true,
+              "alarm": true
+          }
+      ]
+  },
+  
+  "enforcementMode": "blocking"
+}
